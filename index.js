@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const cors = require('cors')
 const connectMongo = require("./Connection");
 const app = express();
 const Port = process.env.Port || 3000;
