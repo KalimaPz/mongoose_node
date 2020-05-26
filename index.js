@@ -3,7 +3,7 @@ const router = express.Router();
 const cors = require('cors')
 const connectMongo = require("./Connection");
 const app = express();
-const Port = process.env.Port || 3000;
+const Port = process.env.Port || 8080;
 app.use(cors());
 connectMongo();
 const Student = require("./Models/Student");
