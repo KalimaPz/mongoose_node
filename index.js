@@ -3,6 +3,7 @@ const router = express.Router();
 const connectMongo = require("./Connection");
 const app = express();
 const Port = process.env.Port || 3000;
+app.use(cors());
 connectMongo();
 const Student = require("./Models/Student");
 app.get("/students", async (req, res) => {
